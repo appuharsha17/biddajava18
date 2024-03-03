@@ -14,12 +14,11 @@ class MyRunnable implements Runnable {
 
 public class threadrunnable {
     public static void main(String[] args) {
-        // Create multiple threads using MyRunnable
+        
         Thread ob1 = new Thread(new MyRunnable(), "Thread 1");
         Thread ob2 = new Thread(new MyRunnable(), "Thread 2");
         Thread ob3 = new Thread(new MyRunnable(), "Thread 3");
 
-        // Start each thread
         ob1.start();
         ob2.start();
         ob3.start();
